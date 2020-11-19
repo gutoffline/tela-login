@@ -1,0 +1,104 @@
+body{
+    font-family: Arial;
+    background: url(../img/fundo.jpg);
+    background-size: 600px;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.loginbox{
+    width: 320px;
+    height: 420px;
+    background: #000;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50% , -50%);
+    padding: 70px 30px;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.avatar{
+    height: 100px;
+    top: -50px;
+    left: calc(50% - 50px);
+    position: absolute;
+    animation: aparecer 0.5s linear;
+}
+
+@keyframes aparecer{
+    0%{
+        opacity: 0.5;
+        /* transform: translateY(-50px); */
+        transform: rotate(20deg);
+    }
+}
+
+
+h1{
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    font-weight: 800;
+}
+
+
+.loginbox input,
+.loginbox button{
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.loginbox input{
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    font-size: 18px;
+}
+
+.loginbox button{
+    background: #2858a5;
+    font-size: 18px;
+}
+
+.loginbox button:hover{
+    background: #6eaaf8;
+    cursor: pointer;
+    color: #000;
+}
+
+.loginbox a{
+    text-decoration: none;
+    color: darkgray;
+    font-size: 14px;
+    line-height: 26px;
+    display: block;
+}
+
+.loginbox a:hover{
+    color: #6eaaf8;
+}
+
+.coracao{
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 20px);
+    width: 40px;
+    animation: bater 0.5s linear infinite;
+}
+
+@keyframes bater{
+    0%{
+        transform: scale(0.9);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0.9);
+    }
+}
